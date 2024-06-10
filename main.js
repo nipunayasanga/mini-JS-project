@@ -1,9 +1,16 @@
+let interval = undefined;
+
+
 const start = () => {
+
+    if (interval){
+        clearInterval(interval);
+    }
 
     let x=0;
 
-    setInterval(() => {
+   interval = setInterval(() => {
         console.log(x);
-        
+        x++
     }, 1000);
 }
