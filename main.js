@@ -11,7 +11,7 @@ const countdown = () => {
     }
 
 
-}
+
 
 interval = setInterval(() => {
 
@@ -26,11 +26,14 @@ interval = setInterval(() => {
 
     if(sec === 59){
         min++;
+            minElement.innerHTML=min
         sec=0;
 
     }
+
     
-}, 1000);
+    }, 1000);
+}
 
 const start = () => {
 
