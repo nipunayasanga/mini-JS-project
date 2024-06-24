@@ -5,6 +5,15 @@ let sec = 0;
 let minElement=document.getElementById("min");
 let secElement=document.getElementById("sec");
 
+const reset = () => {
+    if (interval){
+        clearInterval(interval);
+    }
+
+    minElement.innerHTML='00';
+    secElement.innerHTML='00';
+}
+
 const countdown = () => {
     if (interval){
         clearInterval(interval);
